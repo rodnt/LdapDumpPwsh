@@ -37,7 +37,7 @@ Write-Host "[*] Connecting to: $LDAPPath"
 Write-Host "[*] Using Credentials: $Username"
 Write-Host "[*] Authentication Type: $AuthType"
 
-# Cria o objeto de conexão (DirectoryEntry)
+
 try {
     $DirectoryEntry = New-Object System.DirectoryServices.DirectoryEntry($LDAPPath, $Username, $Password, $AuthType)
     $DirectoryEntry.RefreshCache()
