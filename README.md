@@ -2,6 +2,17 @@
 
 This PowerShell script performs LDAP enumeration in chunks to efficiently query and export large datasets from an LDAP server without exhausting system memory ( LARGE DOMAIN ). It connects to an LDAP server, retrieves data (users, groups, computers, and domain policies), and exports the results incrementally to CSV files.
 
+
+---
+
+> This script was developed specifically for environments where traditional enumeration tools (commonly Linux-based, such as ldapsearch, nmap, or custom Python scripts) are restricted.
+
+> In many engagement scenarios, especially in Virtual Desktop Infrastructures (VDIs) or highly controlled environments, these tools are unavailable or their execution is blocked. PowerShell, however, is typically allowed in Windows (Bypass) environments and provides native access to LDAP via the .NET Framework. This script is designed to bridge that gap, enabling enumeration tasks directly from such environments without requiring external binaries or installations.
+
+> By leveraging PowerShell and its native capabilities, this tool ensures you can operate effectively in constrained environments while adhering to organizational restrictions.
+
+---
+
 ### Features
 1.	Chunked Processing: Processes and exports data in manageable chunks to avoid OutOfMemoryException.
 2.	Paged LDAP Queries: Leverages the PageSize property for efficient server-side querying.
