@@ -1,4 +1,4 @@
-LDAP Enumeration Script with Chunked Processing
+# LDAP Enumeration Script
 
 This PowerShell script performs LDAP enumeration in chunks to efficiently query and export large datasets from an LDAP server without exhausting system memory ( LARGE DOMAIN ). It connects to an LDAP server, retrieves data (users, groups, computers, and domain policies), and exports the results incrementally to CSV files.
 
