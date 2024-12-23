@@ -114,18 +114,18 @@ Modify the -PageSize parameter when calling Export-LDAPSearchChunked to control 
 ### Troubleshooting
 
 Error: “Failed to connect to LDAP server”
-• Check the -LDAPPath format and ensure it points to a valid LDAP server.
-• Ensure the username and password are correct.
-• If LDAPS is required, use LDAPS:// and the appropriate port (636).
+- Check the -LDAPPath format and ensure it points to a valid LDAP server.
+- Ensure the username and password are correct.
+- If LDAPS is required, use LDAPS:// and the appropriate port (636).
 
 Error: “OutOfMemoryException”
-• Reduce the chunk size using the -PageSize parameter (e.g., -PageSize 100).
-• Ensure the server is returning paged results by setting the PageSize in the query.
+- Reduce the chunk size using the -PageSize parameter (e.g., -PageSize 100).
+- Ensure the server is returning paged results by setting the PageSize in the query.
 
 Error: “Access Denied”
-• Verify that the user account has sufficient permissions to query the LDAP server.
+- Verify that the user account has sufficient permissions to query the LDAP server.
 
-Contact
+## Contact
 
 For questions or further assistance, feel free to reach out!
 0xrodnt at Twitter ;)
